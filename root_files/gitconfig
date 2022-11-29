@@ -50,3 +50,6 @@
   diff = diff-highlight | less
 [user]
 	name = marija.ferber@synd.io
+	signingkey = 4FCF4412A4487C21
+[commit]
+	gpgsign = true
