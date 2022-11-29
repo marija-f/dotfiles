@@ -68,9 +68,6 @@ safepathprepend $HOME/.bin.local
 safesource $HOME/.rvm/scripts/rvm
 
 # Add GPG Key
-if [ -r ~/.zshrc ]; then echo 'export GPG_TTY=$(tty)' >> ~/.zshrc; \
-  else echo 'export GPG_TTY=$(tty)' >> ~/.zprofile; fi
+export GPG_TTY=$(tty)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export GPG_TTY=$(tty)
-export GPG_TTY=$(tty)
