@@ -72,3 +72,5 @@ if [ -r ~/.zshrc ]; then echo 'export GPG_TTY=$(tty)' >> ~/.zshrc; \
   else echo 'export GPG_TTY=$(tty)' >> ~/.zprofile; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export GPG_TTY=$(tty)
+export GPG_TTY=$(tty)
