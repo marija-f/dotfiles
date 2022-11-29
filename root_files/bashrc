@@ -145,3 +145,5 @@ safepathprepend $HOME/.bin.local
 safesource $HOME/.rvm/scripts/rvm
 
 safesource $HOME/.fzf.bash
+
+ssh-add --apple-use-keychain
