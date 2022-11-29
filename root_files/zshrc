@@ -67,4 +67,8 @@ safepathprepend $HOME/.bin.local
 ## Load RVM into a shell session *as a function*
 safesource $HOME/.rvm/scripts/rvm
 
+# Add GPG Key
+if [ -r ~/.zshrc ]; then echo 'export GPG_TTY=$(tty)' >> ~/.zshrc; \
+  else echo 'export GPG_TTY=$(tty)' >> ~/.zprofile; fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
