@@ -36,7 +36,7 @@ function configure_vim {
   [ -h $VIM_RC_DIRECTORY/$VIM_RC_NAME ] && make_backup $VIM_RC_DIRECTORY/$VIM_CONFIG
   wrap_execute ln -fs $PWD/vim_configs/$VIM_CONFIG $VIM_RC_DIRECTORY/$VIM_CONFIG
 
-  VIM_COLOR_FILE=Tomorrow-Night.vim
+  VIM_COLOR_FILE=vibrantink.vim
   create_directory $VIM_COLORS_DIR
   [ -h $VIM_COLORS_DIR/$VIM_COLOR_FILE ] && make_backup $VIM_COLORS_DIR/$VIM_COLOR_FILE
   wrap_execute ln -fs $PWD/vim_configs/$VIM_COLOR_FILE $VIM_COLORS_DIR/$VIM_COLOR_FILE

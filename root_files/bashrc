@@ -146,4 +146,4 @@ safesource $HOME/.rvm/scripts/rvm
 
 safesource $HOME/.fzf.bash
 
-ssh-add --apple-use-keychain
+# ssh-add --apple-use-keychain

@@ -188,7 +188,7 @@ let g:indentLine_bgcolor_term = 235
 
 
 " ========= Color Schemes ========
-colorscheme Tomorrow-Night
+colorscheme vibrantink
 au FileType diff colorscheme desert
 au FileType git colorscheme desert
 

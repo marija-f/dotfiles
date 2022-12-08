@@ -1,4 +1,4 @@
-##my::dotfiles
+## my::dotfiles
 
 In the constant quest to make every machine in your image you'll need *nix config files. This repo contains all of the "must have" features in a really easy to install package.
 
@@ -22,6 +22,8 @@ Most of the work is done by installing some symbolic links in your `$HOME` folde
 The configs assume a standard shell invocation process and currently support `bash` and `zsh`. Remember that `zsh` wins in most cases, so just do that? The load paths for each are as follows with what loads each config:
 
 ### ZSH
+(Currently using)
+
 ```
   (system) -> .zshenv
   (system) -> .zshrc

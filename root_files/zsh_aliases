@@ -93,3 +93,14 @@ ressh() {
   echo
   ssh-add -l 2>/dev/null
 }
+
+ensure_tmux_session() {
+ if tmux has-session -t marija > /dev/null 2>&1; then
+     :
+ else
+     tmux new-session -s marija
+     tmux send-keys -t marija cd syndio
+ fi
+}
+
+alias tmux me="ensure_tmux_session"
