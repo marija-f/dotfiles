@@ -104,3 +104,10 @@ ensure_tmux_session() {
 }
 
 alias tmux me="ensure_tmux_session"
+
+# alias Lunar Vim
+alias lvim=/Users/marija/.local/bin/lvim
+alias k='kubectl'
+alias kns='kubectl config set-context --namespace='
+alias g='git'
+alias gg='git grep'

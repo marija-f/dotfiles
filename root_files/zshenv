@@ -27,3 +27,8 @@ safepathappend $HOME/.rvm/bin
 
 ## Common Applications
 safepathappend /usr/local/heroku/bin
+. "$HOME/.cargo/env"
+
+## Startup command
+ssh-add --apple-use-keychain
+cd syndio/backend
