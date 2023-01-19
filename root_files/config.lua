@@ -1,0 +1,1 @@
+/Users/marija/.config/lvim/config.lua

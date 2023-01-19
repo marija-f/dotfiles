@@ -53,3 +53,11 @@ This uses [tmuxline.vim](https://github.com/edkolev/tmuxline.vim). Tmuxline can 
 
 Simply run `rake uninstall` from within the repository. This should also be helpful if installation fails halfway though.
 
+
+## To Do
+
+Add/correct symlink commands to setup script for:
+```
+~/.local/share/lunarvim/lvim/lua/lvim/core/dap.lua
+~/.config/lvim/config.lua
+```

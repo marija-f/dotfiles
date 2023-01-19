@@ -57,8 +57,3 @@ alias tmux-list='tmux_list'
 alias tmuxl='tmux_list'
 alias tmux-public='tmux_public'
 alias tmuxpub='tmux_public'
-
-alias bmux-start="echo 'DEPRECATED: SWITCH TO tmux-start' && tmux_start"
-alias bmuxs="echo 'DEPRECATED: SWITCH TO tmuxs' && tmux_start"
-alias bmux-list="echo 'DEPRECATED: SWITCH TO tmux-list' && tmux_list"
-alias bmuxl="echo 'DEPRECATED:SWTICH TO tmuxl' && tmux_list"

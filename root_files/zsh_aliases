@@ -94,20 +94,10 @@ ressh() {
   ssh-add -l 2>/dev/null
 }
 
-ensure_tmux_session() {
- if tmux has-session -t marija > /dev/null 2>&1; then
-     :
- else
-     tmux new-session -s marija
-     tmux send-keys -t marija cd syndio
- fi
-}
-
-alias tmux me="ensure_tmux_session"
-
 # alias Lunar Vim
 alias lvim=/Users/marija/.local/bin/lvim
 alias k='kubectl'
 alias kns='kubectl config set-context --namespace='
 alias g='git'
 alias gg='git grep'
+alias v='lvim'

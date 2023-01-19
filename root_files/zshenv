@@ -31,4 +31,4 @@ safepathappend /usr/local/heroku/bin
 
 ## Startup command
 ssh-add --apple-use-keychain
-cd syndio/backend
+cd ~/syndio/backend

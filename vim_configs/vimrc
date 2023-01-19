@@ -9,7 +9,7 @@ filetype off
 compiler ruby
 
 " ========= Options ========
-set background=dark
+" set background=dark
 set foldlevel=99
 set backspace=indent,eol,start
 set cursorline
@@ -26,7 +26,7 @@ set smartcase
 set tags+=gems.tags
 set wrap
 
-set textwidth=0 nosmartindent tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" set textwidth=0 nosmartindent tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
 set wildignore+=*.pyc,*.o,*.class,*.lo,.git,vendor/*,node_modules/**,bower_components/**,elm-stuff/**,elm.js,*/venv/**
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
@@ -68,7 +68,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 autocmd FileType cs setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType elixir setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType gitcommit set tw=72
-autocmd FileType go setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType go setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
@@ -130,6 +130,21 @@ Plugin 'mattn/emmet-vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'suan/vim-instant-markdown.git'
 
+Plugin 'fatih/vim-go'
+let g:go_debug_windows = {
+      \ 'vars':       'rightbelow 50vnew',
+      \ 'stack':      'rightbelow 10new',
+      \ }
+let g:go_debug_mappings = {
+      \ '(go-debug-continue)': {'key': 'c', 'arguments': '<nowait>'},
+      \ '(go-debug-next)': {'key': 'n', 'arguments': '<nowait>'},
+      \ '(go-debug-step)': {'key': 's'},
+      \ '(go-debug-print)': {'key': 'p'},
+  \}
+map <silent> <LocalLeader>ds :GoDebugStart<CR>
+map <silent> <LocalLeader>dt :GoDebugStop<CR>
+map <silent> <LocalLeader>db :GoDebugBreakpoint<CR>
+
 Plugin 'elzr/vim-json'
 let g:vim_json_syntax_conceal = 0
 
@@ -166,6 +181,8 @@ map <silent> <LocalLeader>vx :wa<CR> :VimuxClosePanes<CR>
 map <silent> <LocalLeader>vp :VimuxPromptCommand<CR>
 vmap <silent> <LocalLeader>vs "vy :call VimuxRunCommand(@v)<CR>
 nmap <silent> <LocalLeader>vs vip<LocalLeader>vs<CR>
+map <silent> <LocalLeader>ra :wa<CR> :GolangTestCurrentPackage<CR>
+map silent> <LocalLeader>rf :wa<CR> :GolangTestFocused<CR>
 "  === Custom test suites ===
 "  Use `alias vim_test_integration='your config'` and `alias vim_test_unit='your config'`
 "  This provides a linkable way to define custom, complex test suite configurations
